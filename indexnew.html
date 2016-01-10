@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="zh-CN">
    <head>
       <meta charset="UTF-8"/>
@@ -6,7 +6,6 @@
       <meta name="csrf-param" content="_csrf">
       <meta name="csrf-token" content="dXhGXzdLTWgUHScrXSpgJBQqIwpkfgZaFz8PDHYcKwoZEB4RZi59DQ==">
       <link rel="stylesheet" href="css/uikit.almost-flat.css" />
-      <link rel="stylesheet" href="css/components/sticky.almost-flat.css" />
       <link rel="stylesheet" href="css/components/search.almost-flat.css" />
       <link rel="stylesheet" href="css/components/slider.almost-flat.css" />    
       <link rel="stylesheet" href="css/components/slidenav.almost-flat.css" />    
@@ -16,7 +15,6 @@
 
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
       <script src="js/uikit.js"></script>
-      <script src="js/components/sticky.js"></script>
       <script src="js/components/search.js"></script>
       <script src="js/components/autocomplete.js"></script>
       <script src="js/components/slideshow.js"></script>
@@ -30,13 +28,14 @@
       <meta property="qc:admins" content="373520377762112111750166375" />
       <meta property="wb:webmaster" content="539807aabda53ec4" />
    </head>
+
    <body class='uk-margin-small'>
 
    <div class="uk-container uk-container-center" >
       
       <div class="uk-grid" >
          <div class="uk-width-1-1" id="header">
-            <div class="uk-grid">
+               <div class="uk-grid">
                 <div class="uk-width-medium-1-3 uk-hidden-small">
                   <ul class="uk-subnav">
                      <li >
@@ -52,20 +51,21 @@
                         <a class="uk-icon-user" href="http://www.jiajiayoupin.com/user.html">测试账号</a>&nbsp;[<a href="http://www.jiajiayoupin.com/site/logout.html">退出</a>]
                      </li>
                      
-                     <li><a  class='uk-icon-file-text' href="http://www.jiajiayoupin.com/order.html">我的订单</a></li> 
-
                      <li class='uk-hidden-small'>
                         <a href="http://www.jiajiayoupin.com/user/favorite.html" class='uk-icon-archive'>我的收藏</a>
                      </li>
 
-                     <li  class=''>
-                        <a class='uk-icon-shopping-cart' href="http://www.jiajiayoupin.com/user/favorite.html" class='uk-icon-archive'>购物车</a>
+                     <li><a  class='uk-icon-file-text' href="http://www.jiajiayoupin.com/order.html">订单</a></li> 
+
+                     <li  class='' style='padding-right:5px;'>
+                        <a class='uk-icon-cart-plus ' href="http://www.jiajiayoupin.com/user/favorite.html">购物车</a>
                      </li>
                   </ul>
                 </div>
             </div>   
          </div>
       </div>
+
 
       <br/>
 
@@ -92,7 +92,7 @@
       <div class="uk-grid uk-margin-top-remove"  >
          <div class="uk-width-1-1" id="index_menu">
             <!-- sticky menu -->
-            <nav class="uk-navbar" data-uk-sticky="{clsactive: 'uk-navbar-attached', top:-100, animation: 'uk-animation-side-up'}">
+            <nav class="uk-navbar" >
                 <a href="#productcat" class='uk-navbar-toggle uk-hidden-large' data-uk-offcanvas> </a>
                 <ul class="uk-navbar-nav">
                      <!-- contains son menus -->
@@ -207,31 +207,31 @@
       </div>
 
 
-
-      <div class="uk-grid uk-margin-top-remove"  >
+      <!-- banner area -->
+      <div class="uk-grid uk-margin-top-remove">
          <div class="uk-width-1-1 uk-slidenav-position" id="index_banner" data-uk-slideshow>
                 <ul class="uk-slideshow"  data-uk-slideshow="{autoplay:true}" style='height:284px;'>
                    <li>
                      <a href='http://jiajiayoupin.com/category/1104.html'>
-                         <img src="http://7xiosd.com1.z0.glb.clouddn.com/banner1.jpg" width="auto" height="284" alt="">
+                         <img src="images/banner1.jpg" width="auto" height="284" alt="">
                         </a>
                   </li>
 
                    <li>
                       <a href='http://jiajiayoupin.com/category/1104.html'>
-                         <img src="http://7xiosd.com1.z0.glb.clouddn.com/banner2.jpg" width="auto" height="284" alt="">
+                         <img src="images/banner2.jpg" width="auto" height="284" alt="">
                       </a>
                   </li>
 
                    <li>
                      <a href='http://jiajiayoupin.com/category/1104.html'>
-                      <img src="http://7xiosd.com1.z0.glb.clouddn.com/banner3.jpg" width="auto" height="284" alt="">
+                      <img src="images/banner4.jpg" width="auto" height="284" alt="">
                      </a>
                   </li>
 
                    <li>
                       <a href='http://jiajiayoupin.com/category/1104.html'>
-                        <img src="http://7xiosd.com1.z0.glb.clouddn.com/banner4.jpg" width="auto" height="284" alt="">
+                        <img src="images/banner5.jpg" width="auto" height="284" alt="">
                      </a>
                    </li>
                 </ul>
@@ -247,6 +247,1825 @@
                 </ul>               
          </div>
       </div>
+
+      <!-- brands list -->
+      <div class="uk-grid uk-margin-large-top"  >
+         <div class="uk-width-1-1" id="index_brandshow" >
+            <div class='uk-grid' data-uk-margin="">
+               <div class='uk-width-medium-1-2'>
+                  <a href="http://www.jiajiayoupin.com/brand/1.html" target="_blank">
+                  <img src="http://7xiosd.com1.z0.glb.clouddn.com/Aptamil爱他美奶粉.jpg"  alt="Aptamil 英国爱他美"></img>
+                  </a>
+               </div>
+
+               <div class='uk-width-medium-1-2'>
+                  <a href="http://www.jiajiayoupin.com/brand/26.html" target="_blank">
+                  <img src="http://7xiosd.com1.z0.glb.clouddn.com/Pampers帮宝适纸尿裤.jpg"  alt="英国帮宝适 Pampers"></img>
+                  </a>
+               </div>
+               <div class='uk-width-medium-1-2'>
+                  <a href="http://www.jiajiayoupin.com/brand/1.html" target="_blank">
+                  <img src="http://7xiosd.com1.z0.glb.clouddn.com/Aptamil爱他美奶粉.jpg"  alt="Aptamil 英国爱他美"></img>
+                  </a>
+               </div>
+
+               <div class='uk-width-medium-1-2'>
+                  <a href="http://www.jiajiayoupin.com/brand/26.html" target="_blank">
+                  <img src="http://7xiosd.com1.z0.glb.clouddn.com/Pampers帮宝适纸尿裤.jpg"  alt="英国帮宝适 Pampers"></img>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <!-- speical price daily --> 
+      <div class="uk-grid uk-margin-large-top"  >
+         <div class="uk-width-1-1 uk-vertical-align-middle" id="index_brandshow"  >
+            <span style='font-size:2rem;'> 每日特价 </span>
+            <span class='uk-text-muted' style='padding-left:10px;font-size:1.2rem;'>价格触目惊心!</span>
+
+            <span class='uk-text-muted uk-hidden-small' style='padding-left:10px;font-size:1.2rem;'>忍无可忍，无需再忍！</span>            
+         </div>
+      </div>
+
+      <div class='uk-grid-divider uk-margin-bottom-remove uk-margin-small-top'></div>
+      
+      <br/>
+
+      <!-- daily special price product list -->
+      <div class="uk-grid"  >
+         <div class="uk-width-1-1" id="index_brandshow" >
+            <div class='uk-grid uk-grid-medium'  data-uk-grid-margin data-uk-grid-match="{target:'> div > .uk-panel'}">
+
+               <!-- start a product -->
+               <div class='uk-width-1-2 uk-margin-small uk-width-medium-1-3  uk-width-large-1-4 '>
+         
+                  <!-- product --> 
+                  <div class='uk-panel uk-panel-box'>
+
+                     <!-- product images -->
+                     <div class=''>
+                        <a href="http://www.jiajiayoupin.com/brand/1.html" target="_blank">
+                           <img src="http://7xiosd.com1.z0.glb.clouddn.com/APTAMIL-01-900-S-A.jpg"  alt="Aptamil 英国爱他美" ></img>
+                        </a>
+                     </div>
+                     
+                     <!-- product name -->   
+                     <div class='uk-margin-small-top'> 
+                        <span class='uk-text-center'>LUSH岚舒 英国正品 玫瑰恋人汽泡弹 沐浴泡泡弹 泡澡bomb
+                        </span>   
+                     </div>
+
+                     <!-- product price --> 
+                     <div  class='uk-grid'>
+                        <div class='uk-width-1-2 uk-width-medium-1-3'>
+                           <span class='uk-button-danger'>￥79.99 </span> 
+                        </div>
+
+                        <div class='uk-width-1-3 uk-hidden-small uk-width-medium-1-3'>
+                           <del class='uk-text-muted'>￥99.99</del> 
+                        </div>
+
+                        <div class='uk-width-1-2 uk-text-right uk-width-medium-1-3'>
+                           <span class='uk-button-danger'>7.8折 </span>
+                        </div>
+                     </div>
+
+                     <!-- product country, sale amount, and buy it now button -->
+                     <div class='uk-hidden-small uk-grid uk-margin-small uk-margin-top-remove uk-margin-bottom-remove' >
+                       <div class='uk-visible-large uk-width-large-1-6'> 
+                           <img src='http://7xkwre.com1.z0.glb.clouddn.com/United%20Kingdom(Great%20Britain).png' /> 
+                        </div>
+
+                        <div class='uk-width-1-2 uk-width-large-2-6'>   
+                           <div class='uk-icon-bar-chart uk-text-muted uk-text-center uk-vertical-align-bottom' style="line-height:24px;">
+                              99999
+                           </div>
+                        </div>
+                        
+                        <div class='uk-width-1-2 uk-width-large-3-6'>      
+                           <div class='uk-button-danger uk-text-center'> 立即购买 </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- end a product --> 
+
+
+              <!-- start a product -->
+               <div class='uk-width-1-2 uk-margin-small uk-width-medium-1-3  uk-width-large-1-4'>
+         
+                  <!-- product --> 
+                  <div class='uk-panel uk-panel-box'>
+
+                     <!-- product images -->
+                     <div class=''>
+                        <a href="http://www.jiajiayoupin.com/brand/1.html" target="_blank">
+                           <img src="http://7xiosd.com1.z0.glb.clouddn.com/APTAMIL-01-900-S-A.jpg"  alt="Aptamil 英国爱他美" ></img>
+                        </a>
+                     </div>
+                     
+                     <!-- product name -->   
+                     <div class='uk-margin-small-top'> 
+                        <span class='uk-text-center'>LUSH岚舒 英国正品 玫瑰恋人汽泡弹 沐浴泡泡弹 泡澡bomb
+                        </span>   
+                     </div>
+
+                     <!-- product price --> 
+                     <div  class='uk-grid'>
+                        <div class='uk-width-1-2 uk-width-medium-1-3'>
+                           <span class='uk-button-danger'>￥79.99 </span> 
+                        </div>
+
+                        <div class='uk-width-1-3 uk-hidden-small uk-width-medium-1-3'>
+                           <del class='uk-text-muted'>￥99.99</del> 
+                        </div>
+
+                        <div class='uk-width-1-2 uk-text-right uk-width-medium-1-3'>
+                           <span class='uk-button-danger'>7.8折 </span>
+                        </div>
+                     </div>
+
+                     <!-- product country, sale amount, and buy it now button -->
+                     <div class='uk-hidden-small uk-grid uk-margin-small uk-margin-top-remove uk-margin-bottom-remove' >
+                       <div class='uk-visible-large uk-width-large-1-6'> 
+                           <img src='http://7xkwre.com1.z0.glb.clouddn.com/United%20Kingdom(Great%20Britain).png' /> 
+                        </div>
+
+                        <div class='uk-width-1-2 uk-width-large-2-6'>   
+                           <div class='uk-icon-bar-chart uk-text-muted uk-text-center uk-vertical-align-bottom' style="line-height:24px;">
+                              99999
+                           </div>
+                        </div>
+                        
+                        <div class='uk-width-1-2 uk-width-large-3-6'>      
+                           <div class='uk-button-danger uk-text-center'> 立即购买 </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- end a product --> 
+
+
+
+
+              <!-- start a product -->
+               <div class='uk-width-1-2 uk-margin-small uk-width-medium-1-3  uk-width-large-1-4'>
+         
+                  <!-- product --> 
+                  <div class='uk-panel uk-panel-box'>
+
+                     <!-- product images -->
+                     <div class=''>
+                        <a href="http://www.jiajiayoupin.com/brand/1.html" target="_blank">
+                           <img src="http://7xiosd.com1.z0.glb.clouddn.com/APTAMIL-01-900-S-A.jpg"  alt="Aptamil 英国爱他美" ></img>
+                        </a>
+                     </div>
+                     
+                     <!-- product name -->   
+                     <div class='uk-margin-small-top'> 
+                        <span class='uk-text-center'>LUSH岚舒 英国正品 玫瑰恋人汽泡弹 沐浴泡泡弹 泡澡bomb
+                        </span>   
+                     </div>
+
+                     <!-- product price --> 
+                     <div  class='uk-grid'>
+                        <div class='uk-width-1-2 uk-width-medium-1-3'>
+                           <span class='uk-button-danger'>￥79.99 </span> 
+                        </div>
+
+                        <div class='uk-width-1-3 uk-hidden-small uk-width-medium-1-3'>
+                           <del class='uk-text-muted'>￥99.99</del> 
+                        </div>
+
+                        <div class='uk-width-1-2 uk-text-right uk-width-medium-1-3'>
+                           <span class='uk-button-danger'>7.8折 </span>
+                        </div>
+                     </div>
+
+                     <!-- product country, sale amount, and buy it now button -->
+                     <div class='uk-hidden-small uk-grid uk-margin-small uk-margin-top-remove uk-margin-bottom-remove' >
+                       <div class='uk-visible-large uk-width-large-1-6'> 
+                           <img src='http://7xkwre.com1.z0.glb.clouddn.com/United%20Kingdom(Great%20Britain).png' /> 
+                        </div>
+
+                        <div class='uk-width-1-2 uk-width-large-2-6'>   
+                           <div class='uk-icon-bar-chart uk-text-muted uk-text-center uk-vertical-align-bottom' style="line-height:24px;">
+                              99999
+                           </div>
+                        </div>
+                        
+                        <div class='uk-width-1-2 uk-width-large-3-6'>      
+                           <div class='uk-button-danger uk-text-center'> 立即购买 </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- end a product --> 
+
+
+
+              <!-- start a product -->
+               <div class='uk-width-1-2 uk-margin-small uk-width-medium-1-3  uk-width-large-1-4'>
+         
+                  <!-- product --> 
+                  <div class='uk-panel uk-panel-box'>
+
+                     <!-- product images -->
+                     <div class=''>
+                        <a href="http://www.jiajiayoupin.com/brand/1.html" target="_blank">
+                           <img src="http://7xiosd.com1.z0.glb.clouddn.com/APTAMIL-01-900-S-A.jpg"  alt="Aptamil 英国爱他美" ></img>
+                        </a>
+                     </div>
+                     
+                     <!-- product name -->   
+                     <div class='uk-margin-small-top'> 
+                        <span class='uk-text-center'>LUSH岚舒 英国正品 玫瑰恋人汽泡弹 沐浴泡泡弹 泡澡bomb
+                        </span>   
+                     </div>
+
+                     <!-- product price --> 
+                     <div  class='uk-grid'>
+                        <div class='uk-width-1-2 uk-width-medium-1-3'>
+                           <span class='uk-button-danger'>￥79.99 </span> 
+                        </div>
+
+                        <div class='uk-width-1-3 uk-hidden-small uk-width-medium-1-3'>
+                           <del class='uk-text-muted'>￥99.99</del> 
+                        </div>
+
+                        <div class='uk-width-1-2 uk-text-right uk-width-medium-1-3'>
+                           <span class='uk-button-danger'>7.8折 </span>
+                        </div>
+                     </div>
+
+                     <!-- product country, sale amount, and buy it now button -->
+                     <div class='uk-hidden-small uk-grid uk-margin-small uk-margin-top-remove uk-margin-bottom-remove' >
+                       <div class='uk-visible-large uk-width-large-1-6'> 
+                           <img src='http://7xkwre.com1.z0.glb.clouddn.com/United%20Kingdom(Great%20Britain).png' /> 
+                        </div>
+
+                        <div class='uk-width-1-2 uk-width-large-2-6'>   
+                           <div class='uk-icon-bar-chart uk-text-muted uk-text-center uk-vertical-align-bottom' style="line-height:24px;">
+                              99999
+                           </div>
+                        </div>
+                        
+                        <div class='uk-width-1-2 uk-width-large-3-6'>      
+                           <div class='uk-button-danger uk-text-center'> 立即购买 </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- end a product --> 
+
+
+
+              <!-- start a product -->
+               <div class='uk-width-1-2 uk-margin-small uk-width-medium-1-3  uk-width-large-1-4'>
+         
+                  <!-- product --> 
+                  <div class='uk-panel uk-panel-box'>
+
+                     <!-- product images -->
+                     <div class=''>
+                        <a href="http://www.jiajiayoupin.com/brand/1.html" target="_blank">
+                           <img src="http://7xiosd.com1.z0.glb.clouddn.com/APTAMIL-01-900-S-A.jpg"  alt="Aptamil 英国爱他美" ></img>
+                        </a>
+                     </div>
+                     
+                     <!-- product name -->   
+                     <div class='uk-margin-small-top'> 
+                        <span class='uk-text-center'>LUSH岚舒 英国正品 玫瑰恋人汽泡弹 沐浴泡泡弹 泡澡bomb
+                        </span>   
+                     </div>
+
+                     <!-- product price --> 
+                     <div  class='uk-grid'>
+                        <div class='uk-width-1-2 uk-width-medium-1-3'>
+                           <span class='uk-button-danger'>￥79.99 </span> 
+                        </div>
+
+                        <div class='uk-width-1-3 uk-hidden-small uk-width-medium-1-3'>
+                           <del class='uk-text-muted'>￥99.99</del> 
+                        </div>
+
+                        <div class='uk-width-1-2 uk-text-right uk-width-medium-1-3'>
+                           <span class='uk-button-danger'>7.8折 </span>
+                        </div>
+                     </div>
+
+                     <!-- product country, sale amount, and buy it now button -->
+                     <div class='uk-hidden-small uk-grid uk-margin-small uk-margin-top-remove uk-margin-bottom-remove' >
+                       <div class='uk-visible-large uk-width-large-1-6'> 
+                           <img src='http://7xkwre.com1.z0.glb.clouddn.com/United%20Kingdom(Great%20Britain).png' /> 
+                        </div>
+
+                        <div class='uk-width-1-2 uk-width-large-2-6'>   
+                           <div class='uk-icon-bar-chart uk-text-muted uk-text-center uk-vertical-align-bottom' style="line-height:24px;">
+                              99999
+                           </div>
+                        </div>
+                        
+                        <div class='uk-width-1-2 uk-width-large-3-6'>      
+                           <div class='uk-button-danger uk-text-center'> 立即购买 </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- end a product --> 
+               
+
+              <!-- start a product -->
+               <div class='uk-width-1-2 uk-margin-small uk-width-medium-1-3  uk-width-large-1-4'>
+         
+                  <!-- product --> 
+                  <div class='uk-panel uk-panel-box'>
+
+                     <!-- product images -->
+                     <div class=''>
+                        <a href="http://www.jiajiayoupin.com/brand/1.html" target="_blank">
+                           <img src="http://7xiosd.com1.z0.glb.clouddn.com/APTAMIL-01-900-S-A.jpg"  alt="Aptamil 英国爱他美" ></img>
+                        </a>
+                     </div>
+                     
+                     <!-- product name -->   
+                     <div class='uk-margin-small-top'> 
+                        <span class='uk-text-center'>LUSH岚舒 英国正品 玫瑰恋人汽泡弹 沐浴泡泡弹 泡澡bomb
+                        </span>   
+                     </div>
+
+                     <!-- product price --> 
+                     <div  class='uk-grid'>
+                        <div class='uk-width-1-2 uk-width-medium-1-3'>
+                           <span class='uk-button-danger'>￥79.99 </span> 
+                        </div>
+
+                        <div class='uk-width-1-3 uk-hidden-small uk-width-medium-1-3'>
+                           <del class='uk-text-muted'>￥99.99</del> 
+                        </div>
+
+                        <div class='uk-width-1-2 uk-text-right uk-width-medium-1-3'>
+                           <span class='uk-button-danger'>7.8折 </span>
+                        </div>
+                     </div>
+
+                     <!-- product country, sale amount, and buy it now button -->
+                     <div class='uk-hidden-small uk-grid uk-margin-small uk-margin-top-remove uk-margin-bottom-remove' >
+                       <div class='uk-visible-large uk-width-large-1-6'> 
+                           <img src='http://7xkwre.com1.z0.glb.clouddn.com/United%20Kingdom(Great%20Britain).png' /> 
+                        </div>
+
+                        <div class='uk-width-1-2 uk-width-large-2-6'>   
+                           <div class='uk-icon-bar-chart uk-text-muted uk-text-center uk-vertical-align-bottom' style="line-height:24px;">
+                              99999
+                           </div>
+                        </div>
+                        
+                        <div class='uk-width-1-2 uk-width-large-3-6'>      
+                           <div class='uk-button-danger uk-text-center'> 立即购买 </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- end a product --> 
+               
+
+
+              <!-- start a product -->
+               <div class='uk-width-1-2 uk-margin-small uk-width-medium-1-3  uk-width-large-1-4'>
+         
+                  <!-- product --> 
+                  <div class='uk-panel uk-panel-box'>
+
+                     <!-- product images -->
+                     <div class=''>
+                        <a href="http://www.jiajiayoupin.com/brand/1.html" target="_blank">
+                           <img src="http://7xiosd.com1.z0.glb.clouddn.com/APTAMIL-01-900-S-A.jpg"  alt="Aptamil 英国爱他美" ></img>
+                        </a>
+                     </div>
+                     
+                     <!-- product name -->   
+                     <div class='uk-margin-small-top'> 
+                        <span class='uk-text-center'>LUSH岚舒 英国正品 玫瑰恋人汽泡弹 沐浴泡泡弹 泡澡bomb
+                        </span>   
+                     </div>
+
+                     <!-- product price --> 
+                     <div  class='uk-grid'>
+                        <div class='uk-width-1-2 uk-width-medium-1-3'>
+                           <span class='uk-button-danger'>￥79.99 </span> 
+                        </div>
+
+                        <div class='uk-width-1-3 uk-hidden-small uk-width-medium-1-3'>
+                           <del class='uk-text-muted'>￥99.99</del> 
+                        </div>
+
+                        <div class='uk-width-1-2 uk-text-right uk-width-medium-1-3'>
+                           <span class='uk-button-danger'>7.8折 </span>
+                        </div>
+                     </div>
+
+                     <!-- product country, sale amount, and buy it now button -->
+                     <div class='uk-hidden-small uk-grid uk-margin-small uk-margin-top-remove uk-margin-bottom-remove' >
+                       <div class='uk-visible-large uk-width-large-1-6'> 
+                           <img src='http://7xkwre.com1.z0.glb.clouddn.com/United%20Kingdom(Great%20Britain).png' /> 
+                        </div>
+
+                        <div class='uk-width-1-2 uk-width-large-2-6'>   
+                           <div class='uk-icon-bar-chart uk-text-muted uk-text-center uk-vertical-align-bottom' style="line-height:24px;">
+                              99999
+                           </div>
+                        </div>
+                        
+                        <div class='uk-width-1-2 uk-width-large-3-6'>      
+                           <div class='uk-button-danger uk-text-center'> 立即购买 </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- end a product -->                                           
+            </div>               
+         </div>
+      </div>    
+      <!-- end of daily special price product list -->
+      <!-- end of daily special price section -->
+
+
+
+
+      <!-- best seller section --> 
+      <div class="uk-grid uk-margin-large-top"  >
+         <div class="uk-width-1-1 uk-vertical-align-middle" id="index_brandshow"  >
+            <span style='font-size:2rem;'> 人气爆款 </span>
+            <span class='uk-text-muted' style='padding-left:10px;font-size:1.2rem;'>100%信赖，100%正品</span>
+
+            <span class='uk-text-muted uk-hidden-small' style='padding-left:10px;font-size:1.2rem;'>，100%低价</span>            
+         </div>
+      </div>
+
+      <div class='uk-grid-divider uk-margin-bottom-remove uk-margin-small-top'></div>
+      
+      <br/>
+
+      <!-- best seller product list -->
+      <div class="uk-grid"  >
+         <div class="uk-width-1-1" id="index_brandshow" >
+            <div class='uk-grid uk-grid-medium'  data-uk-grid-margin data-uk-grid-match="{target:'> div > .uk-panel'}">
+
+               <!-- start a product -->
+               <div class='uk-width-1-2 uk-margin-small uk-width-medium-1-3  uk-width-large-1-4 '>
+         
+                  <!-- product --> 
+                  <div class='uk-panel uk-panel-box'>
+
+                     <!-- product images -->
+                     <div class=''>
+                        <a href="http://www.jiajiayoupin.com/brand/1.html" target="_blank">
+                           <img src="http://7xiosd.com1.z0.glb.clouddn.com/APTAMIL-01-900-S-A.jpg"  alt="Aptamil 英国爱他美" ></img>
+                        </a>
+                     </div>
+                     
+                     <!-- product name -->   
+                     <div class='uk-margin-small-top'> 
+                        <span class='uk-text-center'>LUSH岚舒 英国正品 玫瑰恋人汽泡弹 沐浴泡泡弹 泡澡bomb
+                        </span>   
+                     </div>
+
+                     <!-- product price --> 
+                     <div  class='uk-grid'>
+                        <div class='uk-width-1-2 uk-width-medium-1-3'>
+                           <span class='uk-button-danger'>￥79.99 </span> 
+                        </div>
+
+                        <div class='uk-width-1-3 uk-hidden-small uk-width-medium-1-3'>
+                           <del class='uk-text-muted'>￥99.99</del> 
+                        </div>
+
+                        <div class='uk-width-1-2 uk-text-right uk-width-medium-1-3'>
+                           <span class='uk-button-danger'>7.8折 </span>
+                        </div>
+                     </div>
+
+                     <!-- product country, sale amount, and buy it now button -->
+                     <div class='uk-hidden-small uk-grid uk-margin-small uk-margin-top-remove uk-margin-bottom-remove' >
+                       <div class='uk-visible-large uk-width-large-1-6'> 
+                           <img src='http://7xkwre.com1.z0.glb.clouddn.com/United%20Kingdom(Great%20Britain).png' /> 
+                        </div>
+
+                        <div class='uk-width-1-2 uk-width-large-2-6'>   
+                           <div class='uk-icon-bar-chart uk-text-muted uk-text-center uk-vertical-align-bottom' style="line-height:24px;">
+                              99999
+                           </div>
+                        </div>
+                        
+                        <div class='uk-width-1-2 uk-width-large-3-6'>      
+                           <div class='uk-button-danger uk-text-center'> 立即购买 </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- end a product --> 
+
+
+              <!-- start a product -->
+               <div class='uk-width-1-2 uk-margin-small uk-width-medium-1-3  uk-width-large-1-4'>
+         
+                  <!-- product --> 
+                  <div class='uk-panel uk-panel-box'>
+
+                     <!-- product images -->
+                     <div class=''>
+                        <a href="http://www.jiajiayoupin.com/brand/1.html" target="_blank">
+                           <img src="http://7xiosd.com1.z0.glb.clouddn.com/APTAMIL-01-900-S-A.jpg"  alt="Aptamil 英国爱他美" ></img>
+                        </a>
+                     </div>
+                     
+                     <!-- product name -->   
+                     <div class='uk-margin-small-top'> 
+                        <span class='uk-text-center'>LUSH岚舒 英国正品 玫瑰恋人汽泡弹 沐浴泡泡弹 泡澡bomb
+                        </span>   
+                     </div>
+
+                     <!-- product price --> 
+                     <div  class='uk-grid'>
+                        <div class='uk-width-1-2 uk-width-medium-1-3'>
+                           <span class='uk-button-danger'>￥79.99 </span> 
+                        </div>
+
+                        <div class='uk-width-1-3 uk-hidden-small uk-width-medium-1-3'>
+                           <del class='uk-text-muted'>￥99.99</del> 
+                        </div>
+
+                        <div class='uk-width-1-2 uk-text-right uk-width-medium-1-3'>
+                           <span class='uk-button-danger'>7.8折 </span>
+                        </div>
+                     </div>
+
+                     <!-- product country, sale amount, and buy it now button -->
+                     <div class='uk-hidden-small uk-grid uk-margin-small uk-margin-top-remove uk-margin-bottom-remove' >
+                       <div class='uk-visible-large uk-width-large-1-6'> 
+                           <img src='http://7xkwre.com1.z0.glb.clouddn.com/United%20Kingdom(Great%20Britain).png' /> 
+                        </div>
+
+                        <div class='uk-width-1-2 uk-width-large-2-6'>   
+                           <div class='uk-icon-bar-chart uk-text-muted uk-text-center uk-vertical-align-bottom' style="line-height:24px;">
+                              99999
+                           </div>
+                        </div>
+                        
+                        <div class='uk-width-1-2 uk-width-large-3-6'>      
+                           <div class='uk-button-danger uk-text-center'> 立即购买 </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- end a product --> 
+
+
+
+
+              <!-- start a product -->
+               <div class='uk-width-1-2 uk-margin-small uk-width-medium-1-3  uk-width-large-1-4'>
+         
+                  <!-- product --> 
+                  <div class='uk-panel uk-panel-box'>
+
+                     <!-- product images -->
+                     <div class=''>
+                        <a href="http://www.jiajiayoupin.com/brand/1.html" target="_blank">
+                           <img src="http://7xiosd.com1.z0.glb.clouddn.com/APTAMIL-01-900-S-A.jpg"  alt="Aptamil 英国爱他美" ></img>
+                        </a>
+                     </div>
+                     
+                     <!-- product name -->   
+                     <div class='uk-margin-small-top'> 
+                        <span class='uk-text-center'>LUSH岚舒 英国正品 玫瑰恋人汽泡弹 沐浴泡泡弹 泡澡bomb
+                        </span>   
+                     </div>
+
+                     <!-- product price --> 
+                     <div  class='uk-grid'>
+                        <div class='uk-width-1-2 uk-width-medium-1-3'>
+                           <span class='uk-button-danger'>￥79.99 </span> 
+                        </div>
+
+                        <div class='uk-width-1-3 uk-hidden-small uk-width-medium-1-3'>
+                           <del class='uk-text-muted'>￥99.99</del> 
+                        </div>
+
+                        <div class='uk-width-1-2 uk-text-right uk-width-medium-1-3'>
+                           <span class='uk-button-danger'>7.8折 </span>
+                        </div>
+                     </div>
+
+                     <!-- product country, sale amount, and buy it now button -->
+                     <div class='uk-hidden-small uk-grid uk-margin-small uk-margin-top-remove uk-margin-bottom-remove' >
+                       <div class='uk-visible-large uk-width-large-1-6'> 
+                           <img src='http://7xkwre.com1.z0.glb.clouddn.com/United%20Kingdom(Great%20Britain).png' /> 
+                        </div>
+
+                        <div class='uk-width-1-2 uk-width-large-2-6'>   
+                           <div class='uk-icon-bar-chart uk-text-muted uk-text-center uk-vertical-align-bottom' style="line-height:24px;">
+                              99999
+                           </div>
+                        </div>
+                        
+                        <div class='uk-width-1-2 uk-width-large-3-6'>      
+                           <div class='uk-button-danger uk-text-center'> 立即购买 </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- end a product --> 
+
+
+
+              <!-- start a product -->
+               <div class='uk-width-1-2 uk-margin-small uk-width-medium-1-3  uk-width-large-1-4'>
+         
+                  <!-- product --> 
+                  <div class='uk-panel uk-panel-box'>
+
+                     <!-- product images -->
+                     <div class=''>
+                        <a href="http://www.jiajiayoupin.com/brand/1.html" target="_blank">
+                           <img src="http://7xiosd.com1.z0.glb.clouddn.com/APTAMIL-01-900-S-A.jpg"  alt="Aptamil 英国爱他美" ></img>
+                        </a>
+                     </div>
+                     
+                     <!-- product name -->   
+                     <div class='uk-margin-small-top'> 
+                        <span class='uk-text-center'>LUSH岚舒 英国正品 玫瑰恋人汽泡弹 沐浴泡泡弹 泡澡bomb
+                        </span>   
+                     </div>
+
+                     <!-- product price --> 
+                     <div  class='uk-grid'>
+                        <div class='uk-width-1-2 uk-width-medium-1-3'>
+                           <span class='uk-button-danger'>￥79.99 </span> 
+                        </div>
+
+                        <div class='uk-width-1-3 uk-hidden-small uk-width-medium-1-3'>
+                           <del class='uk-text-muted'>￥99.99</del> 
+                        </div>
+
+                        <div class='uk-width-1-2 uk-text-right uk-width-medium-1-3'>
+                           <span class='uk-button-danger'>7.8折 </span>
+                        </div>
+                     </div>
+
+                     <!-- product country, sale amount, and buy it now button -->
+                     <div class='uk-hidden-small uk-grid uk-margin-small uk-margin-top-remove uk-margin-bottom-remove' >
+                       <div class='uk-visible-large uk-width-large-1-6'> 
+                           <img src='http://7xkwre.com1.z0.glb.clouddn.com/United%20Kingdom(Great%20Britain).png' /> 
+                        </div>
+
+                        <div class='uk-width-1-2 uk-width-large-2-6'>   
+                           <div class='uk-icon-bar-chart uk-text-muted uk-text-center uk-vertical-align-bottom' style="line-height:24px;">
+                              99999
+                           </div>
+                        </div>
+                        
+                        <div class='uk-width-1-2 uk-width-large-3-6'>      
+                           <div class='uk-button-danger uk-text-center'> 立即购买 </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- end a product --> 
+
+
+
+              <!-- start a product -->
+               <div class='uk-width-1-2 uk-margin-small uk-width-medium-1-3  uk-width-large-1-4'>
+         
+                  <!-- product --> 
+                  <div class='uk-panel uk-panel-box'>
+
+                     <!-- product images -->
+                     <div class=''>
+                        <a href="http://www.jiajiayoupin.com/brand/1.html" target="_blank">
+                           <img src="http://7xiosd.com1.z0.glb.clouddn.com/APTAMIL-01-900-S-A.jpg"  alt="Aptamil 英国爱他美" ></img>
+                        </a>
+                     </div>
+                     
+                     <!-- product name -->   
+                     <div class='uk-margin-small-top'> 
+                        <span class='uk-text-center'>LUSH岚舒 英国正品 玫瑰恋人汽泡弹 沐浴泡泡弹 泡澡bomb
+                        </span>   
+                     </div>
+
+                     <!-- product price --> 
+                     <div  class='uk-grid'>
+                        <div class='uk-width-1-2 uk-width-medium-1-3'>
+                           <span class='uk-button-danger'>￥79.99 </span> 
+                        </div>
+
+                        <div class='uk-width-1-3 uk-hidden-small uk-width-medium-1-3'>
+                           <del class='uk-text-muted'>￥99.99</del> 
+                        </div>
+
+                        <div class='uk-width-1-2 uk-text-right uk-width-medium-1-3'>
+                           <span class='uk-button-danger'>7.8折 </span>
+                        </div>
+                     </div>
+
+                     <!-- product country, sale amount, and buy it now button -->
+                     <div class='uk-hidden-small uk-grid uk-margin-small uk-margin-top-remove uk-margin-bottom-remove' >
+                       <div class='uk-visible-large uk-width-large-1-6'> 
+                           <img src='http://7xkwre.com1.z0.glb.clouddn.com/United%20Kingdom(Great%20Britain).png' /> 
+                        </div>
+
+                        <div class='uk-width-1-2 uk-width-large-2-6'>   
+                           <div class='uk-icon-bar-chart uk-text-muted uk-text-center uk-vertical-align-bottom' style="line-height:24px;">
+                              99999
+                           </div>
+                        </div>
+                        
+                        <div class='uk-width-1-2 uk-width-large-3-6'>      
+                           <div class='uk-button-danger uk-text-center'> 立即购买 </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- end a product --> 
+               
+
+              <!-- start a product -->
+               <div class='uk-width-1-2 uk-margin-small uk-width-medium-1-3  uk-width-large-1-4'>
+         
+                  <!-- product --> 
+                  <div class='uk-panel uk-panel-box'>
+
+                     <!-- product images -->
+                     <div class=''>
+                        <a href="http://www.jiajiayoupin.com/brand/1.html" target="_blank">
+                           <img src="http://7xiosd.com1.z0.glb.clouddn.com/APTAMIL-01-900-S-A.jpg"  alt="Aptamil 英国爱他美" ></img>
+                        </a>
+                     </div>
+                     
+                     <!-- product name -->   
+                     <div class='uk-margin-small-top'> 
+                        <span class='uk-text-center'>LUSH岚舒 英国正品 玫瑰恋人汽泡弹 沐浴泡泡弹 泡澡bomb
+                        </span>   
+                     </div>
+
+                     <!-- product price --> 
+                     <div  class='uk-grid'>
+                        <div class='uk-width-1-2 uk-width-medium-1-3'>
+                           <span class='uk-button-danger'>￥79.99 </span> 
+                        </div>
+
+                        <div class='uk-width-1-3 uk-hidden-small uk-width-medium-1-3'>
+                           <del class='uk-text-muted'>￥99.99</del> 
+                        </div>
+
+                        <div class='uk-width-1-2 uk-text-right uk-width-medium-1-3'>
+                           <span class='uk-button-danger'>7.8折 </span>
+                        </div>
+                     </div>
+
+                     <!-- product country, sale amount, and buy it now button -->
+                     <div class='uk-hidden-small uk-grid uk-margin-small uk-margin-top-remove uk-margin-bottom-remove' >
+                       <div class='uk-visible-large uk-width-large-1-6'> 
+                           <img src='http://7xkwre.com1.z0.glb.clouddn.com/United%20Kingdom(Great%20Britain).png' /> 
+                        </div>
+
+                        <div class='uk-width-1-2 uk-width-large-2-6'>   
+                           <div class='uk-icon-bar-chart uk-text-muted uk-text-center uk-vertical-align-bottom' style="line-height:24px;">
+                              99999
+                           </div>
+                        </div>
+                        
+                        <div class='uk-width-1-2 uk-width-large-3-6'>      
+                           <div class='uk-button-danger uk-text-center'> 立即购买 </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- end a product --> 
+               
+
+
+              <!-- start a product -->
+               <div class='uk-width-1-2 uk-margin-small uk-width-medium-1-3  uk-width-large-1-4'>
+         
+                  <!-- product --> 
+                  <div class='uk-panel uk-panel-box'>
+
+                     <!-- product images -->
+                     <div class=''>
+                        <a href="http://www.jiajiayoupin.com/brand/1.html" target="_blank">
+                           <img src="http://7xiosd.com1.z0.glb.clouddn.com/APTAMIL-01-900-S-A.jpg"  alt="Aptamil 英国爱他美" ></img>
+                        </a>
+                     </div>
+                     
+                     <!-- product name -->   
+                     <div class='uk-margin-small-top'> 
+                        <span class='uk-text-center'>LUSH岚舒 英国正品 玫瑰恋人汽泡弹 沐浴泡泡弹 泡澡bomb
+                        </span>   
+                     </div>
+
+                     <!-- product price --> 
+                     <div  class='uk-grid'>
+                        <div class='uk-width-1-2 uk-width-medium-1-3'>
+                           <span class='uk-button-danger'>￥79.99 </span> 
+                        </div>
+
+                        <div class='uk-width-1-3 uk-hidden-small uk-width-medium-1-3'>
+                           <del class='uk-text-muted'>￥99.99</del> 
+                        </div>
+
+                        <div class='uk-width-1-2 uk-text-right uk-width-medium-1-3'>
+                           <span class='uk-button-danger'>7.8折 </span>
+                        </div>
+                     </div>
+
+                     <!-- product country, sale amount, and buy it now button -->
+                     <div class='uk-hidden-small uk-grid uk-margin-small uk-margin-top-remove uk-margin-bottom-remove' >
+                       <div class='uk-visible-large uk-width-large-1-6'> 
+                           <img src='http://7xkwre.com1.z0.glb.clouddn.com/United%20Kingdom(Great%20Britain).png' /> 
+                        </div>
+
+                        <div class='uk-width-1-2 uk-width-large-2-6'>   
+                           <div class='uk-icon-bar-chart uk-text-muted uk-text-center uk-vertical-align-bottom' style="line-height:24px;">
+                              99999
+                           </div>
+                        </div>
+                        
+                        <div class='uk-width-1-2 uk-width-large-3-6'>      
+                           <div class='uk-button-danger uk-text-center'> 立即购买 </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- end a product -->                                           
+            </div>               
+         </div>
+      </div>    
+      <!-- end of best seller product list -->
+      <!-- end of best seller section -->
+
+
+      <!-- category recommend --> 
+      <!-- category recommend 1 --> 
+      <div class="uk-grid uk-margin-large-top"  >
+         <div class="uk-width-1-1 uk-vertical-align-middle" id="index_brandshow"  >
+            <span style='font-size:2rem;'> 母婴专区 </span>
+
+            <a href=''><span class='uk-text-muted uk-visible-large' style='padding-left:10px;font-size:1.2rem;'>婴儿奶粉</span></a>
+
+            <a href=''><span class='uk-text-muted uk-visible-large' style='padding-left:10px;font-size:1.2rem;'>纸尿片</span></a>
+
+            <a href=''><span class='uk-text-muted uk-visible-large' style='padding-left:10px;font-size:1.2rem;'>宝宝辅食</span></a>
+
+            <a href=''><span class='uk-text-muted uk-visible-large' style='padding-left:10px;font-size:1.2rem;'>安全座椅</span></a>
+
+            <a href=''><span class='uk-text-muted uk-visible-large' style='padding-left:10px;font-size:1.2rem;'>宝宝用品</span></a>  
+         </div>
+      </div>
+
+      <div class='uk-grid-divider uk-margin-bottom-remove uk-margin-small-top'></div>
+      
+      <br/>
+
+      <!-- category recomme 1 product list --> 
+      <div class="uk-grid"  >
+         <div class="uk-width-1-1" id="index_brandshow" >
+            <div class='uk-grid uk-grid-medium'  data-uk-grid-margin data-uk-grid-match="{target:'> div > .uk-panel'}">
+
+               <!-- start a product -->
+               <div class='uk-width-1-2 uk-margin-small uk-width-medium-1-3  uk-width-large-1-4 '>
+         
+                  <!-- product --> 
+                  <div class='uk-panel uk-panel-box'>
+
+                     <!-- product images -->
+                     <div class=''>
+                        <a href="http://www.jiajiayoupin.com/brand/1.html" target="_blank">
+                           <img src="http://7xiosd.com1.z0.glb.clouddn.com/APTAMIL-01-900-S-A.jpg"  alt="Aptamil 英国爱他美" ></img>
+                        </a>
+                     </div>
+                     
+                     <!-- product name -->   
+                     <div class='uk-margin-small-top'> 
+                        <span class='uk-text-center'>LUSH岚舒 英国正品 玫瑰恋人汽泡弹 沐浴泡泡弹 泡澡bomb
+                        </span>   
+                     </div>
+
+                     <!-- product price --> 
+                     <div  class='uk-grid'>
+                        <div class='uk-width-1-2 uk-width-medium-1-3'>
+                           <span class='uk-button-danger'>￥79.99 </span> 
+                        </div>
+
+                        <div class='uk-width-1-3 uk-hidden-small uk-width-medium-1-3'>
+                           <del class='uk-text-muted'>￥99.99</del> 
+                        </div>
+
+                        <div class='uk-width-1-2 uk-text-right uk-width-medium-1-3'>
+                           <span class='uk-button-danger'>7.8折 </span>
+                        </div>
+                     </div>
+
+                     <!-- product country, sale amount, and buy it now button -->
+                     <div class='uk-hidden-small uk-grid uk-margin-small uk-margin-top-remove uk-margin-bottom-remove' >
+                       <div class='uk-visible-large uk-width-large-1-6'> 
+                           <img src='http://7xkwre.com1.z0.glb.clouddn.com/United%20Kingdom(Great%20Britain).png' /> 
+                        </div>
+
+                        <div class='uk-width-1-2 uk-width-large-2-6'>   
+                           <div class='uk-icon-bar-chart uk-text-muted uk-text-center uk-vertical-align-bottom' style="line-height:24px;">
+                              99999
+                           </div>
+                        </div>
+                        
+                        <div class='uk-width-1-2 uk-width-large-3-6'>      
+                           <div class='uk-button-danger uk-text-center'> 立即购买 </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- end a product --> 
+
+
+              <!-- start a product -->
+               <div class='uk-width-1-2 uk-margin-small uk-width-medium-1-3  uk-width-large-1-4'>
+         
+                  <!-- product --> 
+                  <div class='uk-panel uk-panel-box'>
+
+                     <!-- product images -->
+                     <div class=''>
+                        <a href="http://www.jiajiayoupin.com/brand/1.html" target="_blank">
+                           <img src="http://7xiosd.com1.z0.glb.clouddn.com/APTAMIL-01-900-S-A.jpg"  alt="Aptamil 英国爱他美" ></img>
+                        </a>
+                     </div>
+                     
+                     <!-- product name -->   
+                     <div class='uk-margin-small-top'> 
+                        <span class='uk-text-center'>LUSH岚舒 英国正品 玫瑰恋人汽泡弹 沐浴泡泡弹 泡澡bomb
+                        </span>   
+                     </div>
+
+                     <!-- product price --> 
+                     <div  class='uk-grid'>
+                        <div class='uk-width-1-2 uk-width-medium-1-3'>
+                           <span class='uk-button-danger'>￥79.99 </span> 
+                        </div>
+
+                        <div class='uk-width-1-3 uk-hidden-small uk-width-medium-1-3'>
+                           <del class='uk-text-muted'>￥99.99</del> 
+                        </div>
+
+                        <div class='uk-width-1-2 uk-text-right uk-width-medium-1-3'>
+                           <span class='uk-button-danger'>7.8折 </span>
+                        </div>
+                     </div>
+
+                     <!-- product country, sale amount, and buy it now button -->
+                     <div class='uk-hidden-small uk-grid uk-margin-small uk-margin-top-remove uk-margin-bottom-remove' >
+                       <div class='uk-visible-large uk-width-large-1-6'> 
+                           <img src='http://7xkwre.com1.z0.glb.clouddn.com/United%20Kingdom(Great%20Britain).png' /> 
+                        </div>
+
+                        <div class='uk-width-1-2 uk-width-large-2-6'>   
+                           <div class='uk-icon-bar-chart uk-text-muted uk-text-center uk-vertical-align-bottom' style="line-height:24px;">
+                              99999
+                           </div>
+                        </div>
+                        
+                        <div class='uk-width-1-2 uk-width-large-3-6'>      
+                           <div class='uk-button-danger uk-text-center'> 立即购买 </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- end a product --> 
+
+
+
+
+              <!-- start a product -->
+               <div class='uk-width-1-2 uk-margin-small uk-width-medium-1-3  uk-width-large-1-4'>
+         
+                  <!-- product --> 
+                  <div class='uk-panel uk-panel-box'>
+
+                     <!-- product images -->
+                     <div class=''>
+                        <a href="http://www.jiajiayoupin.com/brand/1.html" target="_blank">
+                           <img src="http://7xiosd.com1.z0.glb.clouddn.com/APTAMIL-01-900-S-A.jpg"  alt="Aptamil 英国爱他美" ></img>
+                        </a>
+                     </div>
+                     
+                     <!-- product name -->   
+                     <div class='uk-margin-small-top'> 
+                        <span class='uk-text-center'>LUSH岚舒 英国正品 玫瑰恋人汽泡弹 沐浴泡泡弹 泡澡bomb
+                        </span>   
+                     </div>
+
+                     <!-- product price --> 
+                     <div  class='uk-grid'>
+                        <div class='uk-width-1-2 uk-width-medium-1-3'>
+                           <span class='uk-button-danger'>￥79.99 </span> 
+                        </div>
+
+                        <div class='uk-width-1-3 uk-hidden-small uk-width-medium-1-3'>
+                           <del class='uk-text-muted'>￥99.99</del> 
+                        </div>
+
+                        <div class='uk-width-1-2 uk-text-right uk-width-medium-1-3'>
+                           <span class='uk-button-danger'>7.8折 </span>
+                        </div>
+                     </div>
+
+                     <!-- product country, sale amount, and buy it now button -->
+                     <div class='uk-hidden-small uk-grid uk-margin-small uk-margin-top-remove uk-margin-bottom-remove' >
+                       <div class='uk-visible-large uk-width-large-1-6'> 
+                           <img src='http://7xkwre.com1.z0.glb.clouddn.com/United%20Kingdom(Great%20Britain).png' /> 
+                        </div>
+
+                        <div class='uk-width-1-2 uk-width-large-2-6'>   
+                           <div class='uk-icon-bar-chart uk-text-muted uk-text-center uk-vertical-align-bottom' style="line-height:24px;">
+                              99999
+                           </div>
+                        </div>
+                        
+                        <div class='uk-width-1-2 uk-width-large-3-6'>      
+                           <div class='uk-button-danger uk-text-center'> 立即购买 </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- end a product --> 
+
+
+
+              <!-- start a product -->
+               <div class='uk-width-1-2 uk-margin-small uk-width-medium-1-3  uk-width-large-1-4'>
+         
+                  <!-- product --> 
+                  <div class='uk-panel uk-panel-box'>
+
+                     <!-- product images -->
+                     <div class=''>
+                        <a href="http://www.jiajiayoupin.com/brand/1.html" target="_blank">
+                           <img src="http://7xiosd.com1.z0.glb.clouddn.com/APTAMIL-01-900-S-A.jpg"  alt="Aptamil 英国爱他美" ></img>
+                        </a>
+                     </div>
+                     
+                     <!-- product name -->   
+                     <div class='uk-margin-small-top'> 
+                        <span class='uk-text-center'>LUSH岚舒 英国正品 玫瑰恋人汽泡弹 沐浴泡泡弹 泡澡bomb
+                        </span>   
+                     </div>
+
+                     <!-- product price --> 
+                     <div  class='uk-grid'>
+                        <div class='uk-width-1-2 uk-width-medium-1-3'>
+                           <span class='uk-button-danger'>￥79.99 </span> 
+                        </div>
+
+                        <div class='uk-width-1-3 uk-hidden-small uk-width-medium-1-3'>
+                           <del class='uk-text-muted'>￥99.99</del> 
+                        </div>
+
+                        <div class='uk-width-1-2 uk-text-right uk-width-medium-1-3'>
+                           <span class='uk-button-danger'>7.8折 </span>
+                        </div>
+                     </div>
+
+                     <!-- product country, sale amount, and buy it now button -->
+                     <div class='uk-hidden-small uk-grid uk-margin-small uk-margin-top-remove uk-margin-bottom-remove' >
+                       <div class='uk-visible-large uk-width-large-1-6'> 
+                           <img src='http://7xkwre.com1.z0.glb.clouddn.com/United%20Kingdom(Great%20Britain).png' /> 
+                        </div>
+
+                        <div class='uk-width-1-2 uk-width-large-2-6'>   
+                           <div class='uk-icon-bar-chart uk-text-muted uk-text-center uk-vertical-align-bottom' style="line-height:24px;">
+                              99999
+                           </div>
+                        </div>
+                        
+                        <div class='uk-width-1-2 uk-width-large-3-6'>      
+                           <div class='uk-button-danger uk-text-center'> 立即购买 </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- end a product --> 
+
+
+
+              <!-- start a product -->
+               <div class='uk-width-1-2 uk-margin-small uk-width-medium-1-3  uk-width-large-1-4'>
+         
+                  <!-- product --> 
+                  <div class='uk-panel uk-panel-box'>
+
+                     <!-- product images -->
+                     <div class=''>
+                        <a href="http://www.jiajiayoupin.com/brand/1.html" target="_blank">
+                           <img src="http://7xiosd.com1.z0.glb.clouddn.com/APTAMIL-01-900-S-A.jpg"  alt="Aptamil 英国爱他美" ></img>
+                        </a>
+                     </div>
+                     
+                     <!-- product name -->   
+                     <div class='uk-margin-small-top'> 
+                        <span class='uk-text-center'>LUSH岚舒 英国正品 玫瑰恋人汽泡弹 沐浴泡泡弹 泡澡bomb
+                        </span>   
+                     </div>
+
+                     <!-- product price --> 
+                     <div  class='uk-grid'>
+                        <div class='uk-width-1-2 uk-width-medium-1-3'>
+                           <span class='uk-button-danger'>￥79.99 </span> 
+                        </div>
+
+                        <div class='uk-width-1-3 uk-hidden-small uk-width-medium-1-3'>
+                           <del class='uk-text-muted'>￥99.99</del> 
+                        </div>
+
+                        <div class='uk-width-1-2 uk-text-right uk-width-medium-1-3'>
+                           <span class='uk-button-danger'>7.8折 </span>
+                        </div>
+                     </div>
+
+                     <!-- product country, sale amount, and buy it now button -->
+                     <div class='uk-hidden-small uk-grid uk-margin-small uk-margin-top-remove uk-margin-bottom-remove' >
+                       <div class='uk-visible-large uk-width-large-1-6'> 
+                           <img src='http://7xkwre.com1.z0.glb.clouddn.com/United%20Kingdom(Great%20Britain).png' /> 
+                        </div>
+
+                        <div class='uk-width-1-2 uk-width-large-2-6'>   
+                           <div class='uk-icon-bar-chart uk-text-muted uk-text-center uk-vertical-align-bottom' style="line-height:24px;">
+                              99999
+                           </div>
+                        </div>
+                        
+                        <div class='uk-width-1-2 uk-width-large-3-6'>      
+                           <div class='uk-button-danger uk-text-center'> 立即购买 </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- end a product --> 
+               
+
+              <!-- start a product -->
+               <div class='uk-width-1-2 uk-margin-small uk-width-medium-1-3  uk-width-large-1-4'>
+         
+                  <!-- product --> 
+                  <div class='uk-panel uk-panel-box'>
+
+                     <!-- product images -->
+                     <div class=''>
+                        <a href="http://www.jiajiayoupin.com/brand/1.html" target="_blank">
+                           <img src="http://7xiosd.com1.z0.glb.clouddn.com/APTAMIL-01-900-S-A.jpg"  alt="Aptamil 英国爱他美" ></img>
+                        </a>
+                     </div>
+                     
+                     <!-- product name -->   
+                     <div class='uk-margin-small-top'> 
+                        <span class='uk-text-center'>LUSH岚舒 英国正品 玫瑰恋人汽泡弹 沐浴泡泡弹 泡澡bomb
+                        </span>   
+                     </div>
+
+                     <!-- product price --> 
+                     <div  class='uk-grid'>
+                        <div class='uk-width-1-2 uk-width-medium-1-3'>
+                           <span class='uk-button-danger'>￥79.99 </span> 
+                        </div>
+
+                        <div class='uk-width-1-3 uk-hidden-small uk-width-medium-1-3'>
+                           <del class='uk-text-muted'>￥99.99</del> 
+                        </div>
+
+                        <div class='uk-width-1-2 uk-text-right uk-width-medium-1-3'>
+                           <span class='uk-button-danger'>7.8折 </span>
+                        </div>
+                     </div>
+
+                     <!-- product country, sale amount, and buy it now button -->
+                     <div class='uk-hidden-small uk-grid uk-margin-small uk-margin-top-remove uk-margin-bottom-remove' >
+                       <div class='uk-visible-large uk-width-large-1-6'> 
+                           <img src='http://7xkwre.com1.z0.glb.clouddn.com/United%20Kingdom(Great%20Britain).png' /> 
+                        </div>
+
+                        <div class='uk-width-1-2 uk-width-large-2-6'>   
+                           <div class='uk-icon-bar-chart uk-text-muted uk-text-center uk-vertical-align-bottom' style="line-height:24px;">
+                              99999
+                           </div>
+                        </div>
+                        
+                        <div class='uk-width-1-2 uk-width-large-3-6'>      
+                           <div class='uk-button-danger uk-text-center'> 立即购买 </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- end a product --> 
+               
+
+
+              <!-- start a product -->
+               <div class='uk-width-1-2 uk-margin-small uk-width-medium-1-3  uk-width-large-1-4'>
+         
+                  <!-- product --> 
+                  <div class='uk-panel uk-panel-box'>
+
+                     <!-- product images -->
+                     <div class=''>
+                        <a href="http://www.jiajiayoupin.com/brand/1.html" target="_blank">
+                           <img src="http://7xiosd.com1.z0.glb.clouddn.com/APTAMIL-01-900-S-A.jpg"  alt="Aptamil 英国爱他美" ></img>
+                        </a>
+                     </div>
+                     
+                     <!-- product name -->   
+                     <div class='uk-margin-small-top'> 
+                        <span class='uk-text-center'>LUSH岚舒 英国正品 玫瑰恋人汽泡弹 沐浴泡泡弹 泡澡bomb
+                        </span>   
+                     </div>
+
+                     <!-- product price --> 
+                     <div  class='uk-grid'>
+                        <div class='uk-width-1-2 uk-width-medium-1-3'>
+                           <span class='uk-button-danger'>￥79.99 </span> 
+                        </div>
+
+                        <div class='uk-width-1-3 uk-hidden-small uk-width-medium-1-3'>
+                           <del class='uk-text-muted'>￥99.99</del> 
+                        </div>
+
+                        <div class='uk-width-1-2 uk-text-right uk-width-medium-1-3'>
+                           <span class='uk-button-danger'>7.8折 </span>
+                        </div>
+                     </div>
+
+                     <!-- product country, sale amount, and buy it now button -->
+                     <div class='uk-hidden-small uk-grid uk-margin-small uk-margin-top-remove uk-margin-bottom-remove' >
+                       <div class='uk-visible-large uk-width-large-1-6'> 
+                           <img src='http://7xkwre.com1.z0.glb.clouddn.com/United%20Kingdom(Great%20Britain).png' /> 
+                        </div>
+
+                        <div class='uk-width-1-2 uk-width-large-2-6'>   
+                           <div class='uk-icon-bar-chart uk-text-muted uk-text-center uk-vertical-align-bottom' style="line-height:24px;">
+                              99999
+                           </div>
+                        </div>
+                        
+                        <div class='uk-width-1-2 uk-width-large-3-6'>      
+                           <div class='uk-button-danger uk-text-center'> 立即购买 </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- end a product -->                                           
+            </div>               
+         </div>
+      </div>    
+      <!-- end of category recommed 1 product list --> 
+      <!-- end of category recommend 1 --> 
+
+
+     <!-- category recommend 2 --> 
+      <div class="uk-grid uk-margin-large-top"  >
+         <div class="uk-width-1-1 uk-vertical-align-middle" id="index_brandshow"  >
+            <span style='font-size:2rem;'> 化妆护理 </span>
+
+            <a href=''><span class='uk-text-muted uk-visible-large' style='padding-left:10px;font-size:1.2rem;'>美容护肤</span></a>
+
+            <a href=''><span class='uk-text-muted uk-visible-large' style='padding-left:10px;font-size:1.2rem;'>身体护理</span></a>
+
+            <a href=''><span class='uk-text-muted uk-visible-large' style='padding-left:10px;font-size:1.2rem;'>护理套装</span></a>
+
+            <a href=''><span class='uk-text-muted uk-visible-large' style='padding-left:10px;font-size:1.2rem;'>男性护理</span></a>
+
+            <a href=''><span class='uk-text-muted uk-visible-large' style='padding-left:10px;font-size:1.2rem;'>美妆彩妆</span></a>  
+         </div>
+      </div>
+
+      <div class='uk-grid-divider uk-margin-bottom-remove uk-margin-small-top'></div>
+      
+      <br/>
+
+      <!-- category recomme 2 product list --> 
+      <div class="uk-grid"  >
+         <div class="uk-width-1-1" id="index_brandshow" >
+            <div class='uk-grid uk-grid-medium'  data-uk-grid-margin data-uk-grid-match="{target:'> div > .uk-panel'}">
+
+               <!-- start a product -->
+               <div class='uk-width-1-2 uk-margin-small uk-width-medium-1-3  uk-width-large-1-4 '>
+         
+                  <!-- product --> 
+                  <div class='uk-panel uk-panel-box'>
+
+                     <!-- product images -->
+                     <div class=''>
+                        <a href="http://www.jiajiayoupin.com/brand/1.html" target="_blank">
+                           <img src="http://7xiosd.com1.z0.glb.clouddn.com/APTAMIL-01-900-S-A.jpg"  alt="Aptamil 英国爱他美" ></img>
+                        </a>
+                     </div>
+                     
+                     <!-- product name -->   
+                     <div class='uk-margin-small-top'> 
+                        <span class='uk-text-center'>LUSH岚舒 英国正品 玫瑰恋人汽泡弹 沐浴泡泡弹 泡澡bomb
+                        </span>   
+                     </div>
+
+                     <!-- product price --> 
+                     <div  class='uk-grid'>
+                        <div class='uk-width-1-2 uk-width-medium-1-3'>
+                           <span class='uk-button-danger'>￥79.99 </span> 
+                        </div>
+
+                        <div class='uk-width-1-3 uk-hidden-small uk-width-medium-1-3'>
+                           <del class='uk-text-muted'>￥99.99</del> 
+                        </div>
+
+                        <div class='uk-width-1-2 uk-text-right uk-width-medium-1-3'>
+                           <span class='uk-button-danger'>7.8折 </span>
+                        </div>
+                     </div>
+
+                     <!-- product country, sale amount, and buy it now button -->
+                     <div class='uk-hidden-small uk-grid uk-margin-small uk-margin-top-remove uk-margin-bottom-remove' >
+                       <div class='uk-visible-large uk-width-large-1-6'> 
+                           <img src='http://7xkwre.com1.z0.glb.clouddn.com/United%20Kingdom(Great%20Britain).png' /> 
+                        </div>
+
+                        <div class='uk-width-1-2 uk-width-large-2-6'>   
+                           <div class='uk-icon-bar-chart uk-text-muted uk-text-center uk-vertical-align-bottom' style="line-height:24px;">
+                              99999
+                           </div>
+                        </div>
+                        
+                        <div class='uk-width-1-2 uk-width-large-3-6'>      
+                           <div class='uk-button-danger uk-text-center'> 立即购买 </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- end a product --> 
+
+
+              <!-- start a product -->
+               <div class='uk-width-1-2 uk-margin-small uk-width-medium-1-3  uk-width-large-1-4'>
+         
+                  <!-- product --> 
+                  <div class='uk-panel uk-panel-box'>
+
+                     <!-- product images -->
+                     <div class=''>
+                        <a href="http://www.jiajiayoupin.com/brand/1.html" target="_blank">
+                           <img src="http://7xiosd.com1.z0.glb.clouddn.com/APTAMIL-01-900-S-A.jpg"  alt="Aptamil 英国爱他美" ></img>
+                        </a>
+                     </div>
+                     
+                     <!-- product name -->   
+                     <div class='uk-margin-small-top'> 
+                        <span class='uk-text-center'>LUSH岚舒 英国正品 玫瑰恋人汽泡弹 沐浴泡泡弹 泡澡bomb
+                        </span>   
+                     </div>
+
+                     <!-- product price --> 
+                     <div  class='uk-grid'>
+                        <div class='uk-width-1-2 uk-width-medium-1-3'>
+                           <span class='uk-button-danger'>￥79.99 </span> 
+                        </div>
+
+                        <div class='uk-width-1-3 uk-hidden-small uk-width-medium-1-3'>
+                           <del class='uk-text-muted'>￥99.99</del> 
+                        </div>
+
+                        <div class='uk-width-1-2 uk-text-right uk-width-medium-1-3'>
+                           <span class='uk-button-danger'>7.8折 </span>
+                        </div>
+                     </div>
+
+                     <!-- product country, sale amount, and buy it now button -->
+                     <div class='uk-hidden-small uk-grid uk-margin-small uk-margin-top-remove uk-margin-bottom-remove' >
+                       <div class='uk-visible-large uk-width-large-1-6'> 
+                           <img src='http://7xkwre.com1.z0.glb.clouddn.com/United%20Kingdom(Great%20Britain).png' /> 
+                        </div>
+
+                        <div class='uk-width-1-2 uk-width-large-2-6'>   
+                           <div class='uk-icon-bar-chart uk-text-muted uk-text-center uk-vertical-align-bottom' style="line-height:24px;">
+                              99999
+                           </div>
+                        </div>
+                        
+                        <div class='uk-width-1-2 uk-width-large-3-6'>      
+                           <div class='uk-button-danger uk-text-center'> 立即购买 </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- end a product --> 
+
+
+
+
+              <!-- start a product -->
+               <div class='uk-width-1-2 uk-margin-small uk-width-medium-1-3  uk-width-large-1-4'>
+         
+                  <!-- product --> 
+                  <div class='uk-panel uk-panel-box'>
+
+                     <!-- product images -->
+                     <div class=''>
+                        <a href="http://www.jiajiayoupin.com/brand/1.html" target="_blank">
+                           <img src="http://7xiosd.com1.z0.glb.clouddn.com/APTAMIL-01-900-S-A.jpg"  alt="Aptamil 英国爱他美" ></img>
+                        </a>
+                     </div>
+                     
+                     <!-- product name -->   
+                     <div class='uk-margin-small-top'> 
+                        <span class='uk-text-center'>LUSH岚舒 英国正品 玫瑰恋人汽泡弹 沐浴泡泡弹 泡澡bomb
+                        </span>   
+                     </div>
+
+                     <!-- product price --> 
+                     <div  class='uk-grid'>
+                        <div class='uk-width-1-2 uk-width-medium-1-3'>
+                           <span class='uk-button-danger'>￥79.99 </span> 
+                        </div>
+
+                        <div class='uk-width-1-3 uk-hidden-small uk-width-medium-1-3'>
+                           <del class='uk-text-muted'>￥99.99</del> 
+                        </div>
+
+                        <div class='uk-width-1-2 uk-text-right uk-width-medium-1-3'>
+                           <span class='uk-button-danger'>7.8折 </span>
+                        </div>
+                     </div>
+
+                     <!-- product country, sale amount, and buy it now button -->
+                     <div class='uk-hidden-small uk-grid uk-margin-small uk-margin-top-remove uk-margin-bottom-remove' >
+                       <div class='uk-visible-large uk-width-large-1-6'> 
+                           <img src='http://7xkwre.com1.z0.glb.clouddn.com/United%20Kingdom(Great%20Britain).png' /> 
+                        </div>
+
+                        <div class='uk-width-1-2 uk-width-large-2-6'>   
+                           <div class='uk-icon-bar-chart uk-text-muted uk-text-center uk-vertical-align-bottom' style="line-height:24px;">
+                              99999
+                           </div>
+                        </div>
+                        
+                        <div class='uk-width-1-2 uk-width-large-3-6'>      
+                           <div class='uk-button-danger uk-text-center'> 立即购买 </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- end a product --> 
+
+
+
+              <!-- start a product -->
+               <div class='uk-width-1-2 uk-margin-small uk-width-medium-1-3  uk-width-large-1-4'>
+         
+                  <!-- product --> 
+                  <div class='uk-panel uk-panel-box'>
+
+                     <!-- product images -->
+                     <div class=''>
+                        <a href="http://www.jiajiayoupin.com/brand/1.html" target="_blank">
+                           <img src="http://7xiosd.com1.z0.glb.clouddn.com/APTAMIL-01-900-S-A.jpg"  alt="Aptamil 英国爱他美" ></img>
+                        </a>
+                     </div>
+                     
+                     <!-- product name -->   
+                     <div class='uk-margin-small-top'> 
+                        <span class='uk-text-center'>LUSH岚舒 英国正品 玫瑰恋人汽泡弹 沐浴泡泡弹 泡澡bomb
+                        </span>   
+                     </div>
+
+                     <!-- product price --> 
+                     <div  class='uk-grid'>
+                        <div class='uk-width-1-2 uk-width-medium-1-3'>
+                           <span class='uk-button-danger'>￥79.99 </span> 
+                        </div>
+
+                        <div class='uk-width-1-3 uk-hidden-small uk-width-medium-1-3'>
+                           <del class='uk-text-muted'>￥99.99</del> 
+                        </div>
+
+                        <div class='uk-width-1-2 uk-text-right uk-width-medium-1-3'>
+                           <span class='uk-button-danger'>7.8折 </span>
+                        </div>
+                     </div>
+
+                     <!-- product country, sale amount, and buy it now button -->
+                     <div class='uk-hidden-small uk-grid uk-margin-small uk-margin-top-remove uk-margin-bottom-remove' >
+                       <div class='uk-visible-large uk-width-large-1-6'> 
+                           <img src='http://7xkwre.com1.z0.glb.clouddn.com/United%20Kingdom(Great%20Britain).png' /> 
+                        </div>
+
+                        <div class='uk-width-1-2 uk-width-large-2-6'>   
+                           <div class='uk-icon-bar-chart uk-text-muted uk-text-center uk-vertical-align-bottom' style="line-height:24px;">
+                              99999
+                           </div>
+                        </div>
+                        
+                        <div class='uk-width-1-2 uk-width-large-3-6'>      
+                           <div class='uk-button-danger uk-text-center'> 立即购买 </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- end a product --> 
+
+
+
+              <!-- start a product -->
+               <div class='uk-width-1-2 uk-margin-small uk-width-medium-1-3  uk-width-large-1-4'>
+         
+                  <!-- product --> 
+                  <div class='uk-panel uk-panel-box'>
+
+                     <!-- product images -->
+                     <div class=''>
+                        <a href="http://www.jiajiayoupin.com/brand/1.html" target="_blank">
+                           <img src="http://7xiosd.com1.z0.glb.clouddn.com/APTAMIL-01-900-S-A.jpg"  alt="Aptamil 英国爱他美" ></img>
+                        </a>
+                     </div>
+                     
+                     <!-- product name -->   
+                     <div class='uk-margin-small-top'> 
+                        <span class='uk-text-center'>LUSH岚舒 英国正品 玫瑰恋人汽泡弹 沐浴泡泡弹 泡澡bomb
+                        </span>   
+                     </div>
+
+                     <!-- product price --> 
+                     <div  class='uk-grid'>
+                        <div class='uk-width-1-2 uk-width-medium-1-3'>
+                           <span class='uk-button-danger'>￥79.99 </span> 
+                        </div>
+
+                        <div class='uk-width-1-3 uk-hidden-small uk-width-medium-1-3'>
+                           <del class='uk-text-muted'>￥99.99</del> 
+                        </div>
+
+                        <div class='uk-width-1-2 uk-text-right uk-width-medium-1-3'>
+                           <span class='uk-button-danger'>7.8折 </span>
+                        </div>
+                     </div>
+
+                     <!-- product country, sale amount, and buy it now button -->
+                     <div class='uk-hidden-small uk-grid uk-margin-small uk-margin-top-remove uk-margin-bottom-remove' >
+                       <div class='uk-visible-large uk-width-large-1-6'> 
+                           <img src='http://7xkwre.com1.z0.glb.clouddn.com/United%20Kingdom(Great%20Britain).png' /> 
+                        </div>
+
+                        <div class='uk-width-1-2 uk-width-large-2-6'>   
+                           <div class='uk-icon-bar-chart uk-text-muted uk-text-center uk-vertical-align-bottom' style="line-height:24px;">
+                              99999
+                           </div>
+                        </div>
+                        
+                        <div class='uk-width-1-2 uk-width-large-3-6'>      
+                           <div class='uk-button-danger uk-text-center'> 立即购买 </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- end a product --> 
+               
+
+              <!-- start a product -->
+               <div class='uk-width-1-2 uk-margin-small uk-width-medium-1-3  uk-width-large-1-4'>
+         
+                  <!-- product --> 
+                  <div class='uk-panel uk-panel-box'>
+
+                     <!-- product images -->
+                     <div class=''>
+                        <a href="http://www.jiajiayoupin.com/brand/1.html" target="_blank">
+                           <img src="http://7xiosd.com1.z0.glb.clouddn.com/APTAMIL-01-900-S-A.jpg"  alt="Aptamil 英国爱他美" ></img>
+                        </a>
+                     </div>
+                     
+                     <!-- product name -->   
+                     <div class='uk-margin-small-top'> 
+                        <span class='uk-text-center'>LUSH岚舒 英国正品 玫瑰恋人汽泡弹 沐浴泡泡弹 泡澡bomb
+                        </span>   
+                     </div>
+
+                     <!-- product price --> 
+                     <div  class='uk-grid'>
+                        <div class='uk-width-1-2 uk-width-medium-1-3'>
+                           <span class='uk-button-danger'>￥79.99 </span> 
+                        </div>
+
+                        <div class='uk-width-1-3 uk-hidden-small uk-width-medium-1-3'>
+                           <del class='uk-text-muted'>￥99.99</del> 
+                        </div>
+
+                        <div class='uk-width-1-2 uk-text-right uk-width-medium-1-3'>
+                           <span class='uk-button-danger'>7.8折 </span>
+                        </div>
+                     </div>
+
+                     <!-- product country, sale amount, and buy it now button -->
+                     <div class='uk-hidden-small uk-grid uk-margin-small uk-margin-top-remove uk-margin-bottom-remove' >
+                       <div class='uk-visible-large uk-width-large-1-6'> 
+                           <img src='http://7xkwre.com1.z0.glb.clouddn.com/United%20Kingdom(Great%20Britain).png' /> 
+                        </div>
+
+                        <div class='uk-width-1-2 uk-width-large-2-6'>   
+                           <div class='uk-icon-bar-chart uk-text-muted uk-text-center uk-vertical-align-bottom' style="line-height:24px;">
+                              99999
+                           </div>
+                        </div>
+                        
+                        <div class='uk-width-1-2 uk-width-large-3-6'>      
+                           <div class='uk-button-danger uk-text-center'> 立即购买 </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- end a product --> 
+               
+
+
+              <!-- start a product -->
+               <div class='uk-width-1-2 uk-margin-small uk-width-medium-1-3  uk-width-large-1-4'>
+         
+                  <!-- product --> 
+                  <div class='uk-panel uk-panel-box'>
+
+                     <!-- product images -->
+                     <div class=''>
+                        <a href="http://www.jiajiayoupin.com/brand/1.html" target="_blank">
+                           <img src="http://7xiosd.com1.z0.glb.clouddn.com/APTAMIL-01-900-S-A.jpg"  alt="Aptamil 英国爱他美" ></img>
+                        </a>
+                     </div>
+                     
+                     <!-- product name -->   
+                     <div class='uk-margin-small-top'> 
+                        <span class='uk-text-center'>LUSH岚舒 英国正品 玫瑰恋人汽泡弹 沐浴泡泡弹 泡澡bomb
+                        </span>   
+                     </div>
+
+                     <!-- product price --> 
+                     <div  class='uk-grid'>
+                        <div class='uk-width-1-2 uk-width-medium-1-3'>
+                           <span class='uk-button-danger'>￥79.99 </span> 
+                        </div>
+
+                        <div class='uk-width-1-3 uk-hidden-small uk-width-medium-1-3'>
+                           <del class='uk-text-muted'>￥99.99</del> 
+                        </div>
+
+                        <div class='uk-width-1-2 uk-text-right uk-width-medium-1-3'>
+                           <span class='uk-button-danger'>7.8折 </span>
+                        </div>
+                     </div>
+
+                     <!-- product country, sale amount, and buy it now button -->
+                     <div class='uk-hidden-small uk-grid uk-margin-small uk-margin-top-remove uk-margin-bottom-remove' >
+                       <div class='uk-visible-large uk-width-large-1-6'> 
+                           <img src='http://7xkwre.com1.z0.glb.clouddn.com/United%20Kingdom(Great%20Britain).png' /> 
+                        </div>
+
+                        <div class='uk-width-1-2 uk-width-large-2-6'>   
+                           <div class='uk-icon-bar-chart uk-text-muted uk-text-center uk-vertical-align-bottom' style="line-height:24px;">
+                              99999
+                           </div>
+                        </div>
+                        
+                        <div class='uk-width-1-2 uk-width-large-3-6'>      
+                           <div class='uk-button-danger uk-text-center'> 立即购买 </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- end a product -->                                           
+            </div>               
+         </div>
+      </div>    
+      <!-- end of category recommed 2 product list --> 
+      <!-- end of category recommend 2 -->       
+      <!-- end of category recommed -->
+
+
+
+      <!-- end of enter content --> 
+
+      <div class='uk-grid-divider'></div>
+      <!-- start the footer area --> 
+      <div class="uk-grid  uk-margin-top-small uk-hidden-small ">
+         <div class="uk-width-1-1" id="logo_header">
+            <div class='uk-panel uk-panel-box'>
+               <div class='uk-grid'>
+                  <!-- footer logo images -->
+                  <div class='uk-width-1-3  uk-visible-large'> 
+                     <ul class='uk-nav'>
+                        <li>
+                           <img src='http://localhost/jiajiayoupinpobile/images/logo1.png' width='100'/>
+                        </li>
+                        <li>
+                           <img src='http://7xkwre.com1.z0.glb.clouddn.com/family.png' width='100'>
+                        </li>
+                     </ul>
+                  </div> 
+
+                  <!-- footer helper and contact information -->
+                  <div class='uk-width-2-3'> 
+                     <div class='uk-grid'>
+                        <div class='uk-width-1-2'>
+                           <div class='uk-grid'> 
+                              <div class='uk-width-1-2'>
+                                 <h4>  关于商城 </h4>
+                                 <ul class='uk-nav'> 
+                                    <li class=''>
+                                       <a href=''>
+                                          <span class='uk-icon-star-o'>售后政策</span>
+                                       </a>
+                                    </li>
+                                    <li class=''>
+                                       <a href=''>
+                                          <span class='uk-icon-star-o'>直邮奶粉</span>
+                                       </a>
+                                    </span>
+                                    </li>
+                                    <li class=''><a href=''><span class='uk-icon-star-o'>配送政策</span></a></li>
+                                    <li class=''><a href=''><span class='uk-icon-star-o'>会员积分</span></a></li>
+                                    <li class=''><a href=''><span class='uk-icon-star-o'>商城协议</span></a></li>
+                                 </ul>
+                              </div>
+
+                              <div class='uk-width-1-2'>
+                                 <h4>  关于商城 </h4>
+                                 <ul class='uk-nav'> 
+                                 <li class=''>
+                                    <a href=''>
+                                       <span class='uk-icon-star-o'>售后政策</span>
+                                    </a>
+                                 </li>
+
+                                 <li class=''>
+                                    <a href=''>
+                                       <span class='uk-icon-star-o'>直邮奶粉</span>
+                                    </a>
+                                 </li>
+
+                                 <li class=''>
+                                    <a href=''>
+                                       <span class='uk-icon-star-o'>配送政策</span>
+                                    </a>
+                                 </li>   
+                                 
+                                 <li class=''>
+                                    <a href=''>
+                                       <span class='uk-icon-star-o'>会员积分</span>
+                                    </a>
+                                 </li>
+
+                                  <li class=''>
+                                    <a href=''>
+                                       <span class='uk-icon-star-o'>商城协议</span>
+                                    </a>
+                                 </li>                                             </ul>
+                              </div>
+                           </div>
+                        </div>
+
+                        <div class='uk-width-1-2'>
+                           <h4>  联系我们 </h4>
+                           <ul class='uk-nav'> 
+                              <li class=''><a href=''><span class='uk-icon-wechat'> 官方公众号：jjypsc</span></a></li>
+                              <li class=''><a href=''><span class='uk-icon-wechat'> 客服微信号：jjypgf</span></a></li>
+
+                              <li class=''><a href=''><span class='uk-icon-qq'> 客服QQ：2843080052</span></a></li>
+                              <li class=''><a href=''><span class='uk-icon-phone'> 热线：0731-85822600</span></a></li>
+
+                              <li class=''><a href=''><span class='uk-icon-envelope'> kf@jiajiayoupin.com</span></a></li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>   
+
+                  <!--div class='uk-width-2-6'> 
+                     <ul class='uk-subnav'> 
+                        <li> 
+                           <img src='http://7xkwre.com1.z0.glb.clouddn.com/wechatsupport.png' width='160'>
+                        </li>
+                        <li>
+                           <img src='http://7xkwre.com1.z0.glb.clouddn.com/jjypgf.png' width='160'>
+                        </li>
+                     </ul>
+                  </div-->
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <!-- end of footer area -->       
+      <div class='uk-grid-divider'></div>
    </div>
 
 
@@ -339,10 +2158,6 @@
             </li>
         </ul>
       </div>
-
-
-
-
    </div>
 
 
