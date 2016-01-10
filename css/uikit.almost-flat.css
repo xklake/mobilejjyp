@@ -9,19 +9,19 @@
  */
 html {
   /* 1 */
-  font: normal 14px / 20px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: normal 12px / 20px "Helvetica Neue", Helvetica, Arial, sans-serif;
   /* 2 */
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   /* 3 */
-  background: #ffffff;
+  background: #fff;
   color: #444444;
 }
 /*
  * Removes default margin.
  */
 body {
-  margin: 0;
+  margin: 0 ;
 }
 /* Links
  ========================================================================== */
@@ -43,7 +43,7 @@ a:hover {
  */
 a,
 .uk-link {
-  color: #0077dd;
+  color: #000;
   text-decoration: none;
   cursor: pointer;
 }
@@ -7876,7 +7876,7 @@ a.uk-thumbnail:focus {
  ========================================================================== */
 .uk-container {
   box-sizing: border-box;
-  max-width: 980px;
+  max-width: 1120px;
   padding: 0 25px;
 }
 /* Large screen and bigger */
