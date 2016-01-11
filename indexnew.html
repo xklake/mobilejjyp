@@ -11,6 +11,7 @@
       <link rel="stylesheet" href="css/components/slidenav.almost-flat.css" />    
       <link rel="stylesheet" href="css/components/slideshow.almost-flat.css" />
       <link rel="stylesheet" href="css/components/dotnav.almost-flat.css" />
+      <link rel="stylesheet" href="css/components/sticky.almost-flat.css" />
 
 
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -21,6 +22,7 @@
       <script src="js/components/slideshow-fx.js"></script>
       <script src="js/components/slider.js"></script>
       <script src="js/components/slideset.js"></script>
+      <script src="js/components/sticky.js"></script>
      
       <title>家家优品-值得信赖的英国直邮+国内现货代购商城，100%正品 - 家家优品全球购商城</title>
       <meta name="keywords" content="家家优品，英国代购,奶粉代购,英国牛栏，英国爱他美，英国海淘, 化妆品代购">
@@ -49,7 +51,7 @@
                   <ul class='uk-subnav uk-align-right'>
 
                      <li id="header_user" >
-                        <a class="uk-icon-home" href="http://www.jiajiayoupin.com">首页</a>
+                        <a class="uk-icon-home uk-visible-small" href="http://www.jiajiayoupin.com">首页</a>
                      </li>
 
                      <li id="header_user" >
@@ -92,12 +94,12 @@
 
 
 
-
       <!-- menu area --> 
+      <div data-uk-sticky> <!-- to make the main menu stick on the top -->
       <div class="uk-grid uk-margin-top-remove"  >
-         <div class="uk-width-1-1" id="index_menu">
+         <div class="uk-width-1-1" id="index_menu" >
             <!-- sticky menu -->
-            <nav class="uk-navbar" >
+            <nav class="uk-navbar">
                 <a href="#productcat" class='uk-navbar-toggle uk-hidden-large' data-uk-offcanvas> </a>
                 <ul class="uk-navbar-nav">
                      <!-- contains son menus -->
@@ -210,7 +212,7 @@
             </nav>
          </div>
       </div>
-
+   </div>
 
       <!-- banner area -->
       <div class="uk-grid uk-margin-top-remove">
